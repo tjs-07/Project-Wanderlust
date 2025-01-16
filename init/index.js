@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const initData = require("/Users/tejas/OneDrive/文件/MAJORPROJECT/init/data");
-const Listing = require("/Users/tejas/OneDrive/文件/MAJORPROJECT/models/listing");
+const initData = require("../init/data");
+const Listing = require("../models/listing");
 
 const MONGO_URL = 'mongodb://127.0.0.1:27017/wanderlust'
 
