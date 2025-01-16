@@ -23,9 +23,9 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user");
 
-const listings = require("C:/Users/tejas/OneDrive/文件/MAJORPROJECT/routes/listing.js");
-const reviews = require("C:/Users/tejas/OneDrive/文件/MAJORPROJECT/routes/review.js")
-const userRouter = require("C:/Users/tejas/OneDrive/文件/MAJORPROJECT/routes/user")
+const listings = require("./routes/listing");
+const reviews = require("./routes/review")
+const userRouter = require("./routes/user")
 
 // const MONGO_URL = 'mongodb://127.0.0.1:27017/wanderlust'
 const dbUrl = process.env.ATLASDB_URL;
