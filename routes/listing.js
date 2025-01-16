@@ -1,9 +1,9 @@
 const express = require("express");
 const router =  express.Router();
-const wrapAsync = require("C:/Users/tejas/OneDrive/文件/MAJORPROJECT/utils/wrapAsync.js") ;
-const ExpressError = require("C:/Users/tejas/OneDrive/文件/MAJORPROJECT/utils/ExpressError") ;
-const {listingSchema , reviewSchema} = require("C:/Users/tejas/OneDrive/文件/MAJORPROJECT/schema.js");
-const Listing = require("C:/Users/tejas/OneDrive/文件/MAJORPROJECT/models/listing.js");
+const wrapAsync = require("../utils/wrapAsync") ;
+const ExpressError = require("../utils/ExpressError") ;
+const {listingSchema , reviewSchema} = require("../schema");
+const Listing = require("../models/listing");
 const{isLoggedIn , isOwner , validateListing} = require("../middleware");
 const { index, renderNewForm, showListing, createListing, editForm, updateListing, deleteListing } = require("../controllers/listings");
 const multer = require("multer");
